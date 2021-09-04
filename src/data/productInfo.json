@@ -1,0 +1,20 @@
+{
+    "productInfo": {
+        "searchDate": "2021/08/27",
+        "status": "点検済み",
+        "tireType": "スタッドレス",
+        "wheel": "ホイール",
+        "runFlood": "NORMAL",
+        "recommended": "交換推奨",
+        "usedTime": "10年８カ月"
+    },
+    "checkProductResult": {
+        "recombinationIO": "不要",
+        "alignment": "不要",
+        "check": "不要",
+        "punctureIns": "不要",
+        "replacementOrRepair": "不要",
+        "judgement": "即交換"
+    }
+    
+}

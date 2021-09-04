@@ -1,0 +1,128 @@
+{
+    "tireProfile": [
+        {
+            "name": "1 前左",
+            "number": "01",
+            "image": {
+                "src": "tire1.png",
+                "alt": "tire1"
+            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
+            "measurement": {
+                "tireReplaceJdg": "即交換",
+                "yearManufacJdg": "不要",
+                "recombinIO": "不要",
+                "punctureInsp": "不要",
+                "alignment": "不要",
+                "wheelReplace": "不要",
+                "checkFillAir": "不要"
+            },
+            "status": {
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
+            },
+            "comment": ""
+        },
+        {
+            "name": "2 前右",
+            "number": "02",
+            "image": {
+                "src": "tire1.png",
+                "alt": "tire1"
+            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
+            "measurement": {
+                "tireReplaceJdg": "不要",
+                "yearManufacJdg": "不要",
+                "recombinIO": "不要",
+                "punctureInsp": "不要",
+                "alignment": "不要",
+                "wheelReplace": "不要",
+                "checkFillAir": "不要"
+            },
+            "status": {
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
+            },
+            "comment": ""
+        },
+        {
+            "name": "3 後左",
+            "number": "03",
+            "image": {
+                "src": "tire1.png",
+                "alt": "tire1"
+            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
+            "measurement": {
+                "tireReplaceJdg": "不要",
+                "yearManufacJdg": "不要",
+                "recombinIO": "不要",
+                "punctureInsp": "不要",
+                "alignment": "不要",
+                "wheelReplace": "不要",
+                "checkFillAir": "不要"
+            },
+            "status": {
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
+            },
+            "comment": ""
+        },
+        {
+            "name": "4 後右",
+            "number": "04",
+            "image": {
+                "src": "tire1.png",
+                "alt": "tire1"
+            },
+            "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+            "makerVersion": "[BS製][[2507][2007年06月]]",
+            "measurement": {
+                "tireReplaceJdg": "不要",
+                "yearManufacJdg": "不要",
+                "recombinIO": "不要",
+                "punctureInsp": "不要",
+                "alignment": "不要",
+                "wheelReplace": "不要",
+                "checkFillAir": "不要"
+            },
+            "status": {
+                "remainGroove": "0.2mm",
+                "foreignObjectStab": "良好",
+                "unevenWear": "良好",
+                "wheelRimBend": "良好",
+                "crack": "良好",
+                "wheelCorrosion": "良好",
+                "separation": "良好",
+                "nutSearWear": "良好",
+                "airFlow": "なし"
+            },
+            "comment": ""
+        }
+    ]
+}
