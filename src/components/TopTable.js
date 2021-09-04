@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import data from "../data/topTable.json";
+import API, { graphqlOperation } from "@aws-amplify/api";
+import { getTireCheckinfo } from "../graphql/queries"
 
 const useStyles = makeStyles({
   table: {
@@ -20,8 +22,16 @@ const useStyles = makeStyles({
   },
 });
 
+
+
+async function test() {
+  let data = await API.graphql(graphqlOperation(getTireCheckinfo, {id: '0f100bf3-a70e-4467-afff-2d24a7ebd90a'}))
+  console.log(data)
+}
+
 function TopTable(props) {
   const classes = useStyles();
+  test();
   return (
     <table className={classes.table}>
       <tr>
