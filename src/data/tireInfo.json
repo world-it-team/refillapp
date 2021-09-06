@@ -3,10 +3,7 @@
         {
             "name": "1 前左",
             "number": "01",
-            "image": {
-                "src": "tire1.png",
-                "alt": "tire1"
-            },
+            "image": "tire1.png",
             "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
             "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
@@ -34,10 +31,7 @@
         {
             "name": "2 前右",
             "number": "02",
-            "image": {
-                "src": "tire1.png",
-                "alt": "tire1"
-            },
+            "image": "tire1.png",
             "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
             "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
@@ -65,10 +59,7 @@
         {
             "name": "3 後左",
             "number": "03",
-            "image": {
-                "src": "tire1.png",
-                "alt": "tire1"
-            },
+            "image": "tire1.png",
             "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
             "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
@@ -96,10 +87,7 @@
         {
             "name": "4 後右",
             "number": "04",
-            "image": {
-                "src": "tire1.png",
-                "alt": "tire1"
-            },
+            "image": "tire1.png",
             "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
             "makerVersion": "[BS製][[2507][2007年06月]]",
             "measurement": {
