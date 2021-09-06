@@ -33,11 +33,11 @@ function CheckProduct(props) {
         <td>ホイール交換/修理</td>
       </tr>
       <tr>
-        <td>{data.checkProductResult.recombinationIO}</td>
-        <td>{data.checkProductResult.alignment}</td>
-        <td>{data.checkProductResult.check}</td>
-        <td>{data.checkProductResult.punctureIns}</td>
-        <td>{data.checkProductResult.replacementOrRepair}</td>
+        <td>{data.productInfo.checkProductResult.recombinationIO}</td>
+        <td>{data.productInfo.checkProductResult.alignment}</td>
+        <td>{data.productInfo.checkProductResult.check}</td>
+        <td>{data.productInfo.checkProductResult.punctureIns}</td>
+        <td>{data.productInfo.checkProductResult.replacementOrRepair}</td>
       </tr>
     </table>
   );

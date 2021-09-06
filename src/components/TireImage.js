@@ -38,8 +38,8 @@ function TireImage(props) {
       </div>
       <div>
         <img
-          src={getImg(props.tireInfo.image.src)}
-          alt={props.tireInfo.image.alt}
+          src={getImg(props.tireInfo.image)}
+          alt={props.tireInfo.image}
           className={classes.image}
         />
       </div>

@@ -8,7 +8,7 @@ import TireHome from "./pages/Home";
 function App() {
   return (
     <Router>
-      <AmplifySignOut />
+      {/* <AmplifySignOut /> */}
       <Switch>
         <Route exact path="/">
           <TireHome />

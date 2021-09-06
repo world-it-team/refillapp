@@ -34,7 +34,7 @@ function Judgement(props) {
         <th>タイヤ交換判定 </th>
       </tr>
       <tr>
-        <td>{data.checkProductResult.judgement}</td>
+        <td>{data.productInfo.checkProductResult.judgement}</td>
       </tr>
     </table>
   );
