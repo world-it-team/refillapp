@@ -141,11 +141,55 @@ export const listStudents = /* GraphQL */ `
     }
   }
 `;
-export const getTireCheckinfo = /* GraphQL */ `
-  query GetTireCheckinfo($id: ID!) {
-    getTireCheckinfo(id: $id) {
+export const getTireKart = /* GraphQL */ `
+  query GetTireKart($id: ID!) {
+    getTireKart(id: $id) {
       id
-      topTable {
+      controlNumber
+      contractorName
+      location
+      vehicleType
+      number
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
+        alignment
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
+      }
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listTireKarts = /* GraphQL */ `
+  query ListTireKarts(
+    $filter: ModelTireKartFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listTireKarts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
         controlNumber
         contractorName
         location
@@ -154,8 +198,6 @@ export const getTireCheckinfo = /* GraphQL */ `
         wareHouse
         contractPeriod
         contractType
-      }
-      productInfo {
         searchDate
         status
         tireType
@@ -163,88 +205,6 @@ export const getTireCheckinfo = /* GraphQL */ `
         runFlood
         recommended
         usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const listTireCheckinfos = /* GraphQL */ `
-  query ListTireCheckinfos(
-    $filter: ModelTireCheckinfoFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listTireCheckinfos(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        createdAt
-        updatedAt
-      }
-      nextToken
-    }
-  }
-`;
-export const getTireProfile = /* GraphQL */ `
-  query GetTireProfile($id: ID!) {
-    getTireProfile(id: $id) {
-      id
-      name
-      number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
-        alignment
-        wheelReplace
-        checkFillAir
-      }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const listTireProfiles = /* GraphQL */ `
-  query ListTireProfiles(
-    $filter: ModelTireProfileFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listTireProfiles(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
-        id
-        name
-        number
-        image
-        tireInfomation
-        makerVersion
-        comment
-        checkInfoID
         createdAt
         updatedAt
       }

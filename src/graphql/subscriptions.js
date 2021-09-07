@@ -199,216 +199,120 @@ export const onDeleteStudent = /* GraphQL */ `
     }
   }
 `;
-export const onCreateTireCheckinfo = /* GraphQL */ `
-  subscription OnCreateTireCheckinfo {
-    onCreateTireCheckinfo {
+export const onCreateTireKart = /* GraphQL */ `
+  subscription OnCreateTireKart {
+    onCreateTireKart {
       id
-      topTable {
-        controlNumber
-        contractorName
-        location
-        vehicleType
-        number
-        wareHouse
-        contractPeriod
-        contractType
-      }
-      productInfo {
-        searchDate
-        status
-        tireType
-        wheel
-        runFlood
-        recommended
-        usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onUpdateTireCheckinfo = /* GraphQL */ `
-  subscription OnUpdateTireCheckinfo {
-    onUpdateTireCheckinfo {
-      id
-      topTable {
-        controlNumber
-        contractorName
-        location
-        vehicleType
-        number
-        wareHouse
-        contractPeriod
-        contractType
-      }
-      productInfo {
-        searchDate
-        status
-        tireType
-        wheel
-        runFlood
-        recommended
-        usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onDeleteTireCheckinfo = /* GraphQL */ `
-  subscription OnDeleteTireCheckinfo {
-    onDeleteTireCheckinfo {
-      id
-      topTable {
-        controlNumber
-        contractorName
-        location
-        vehicleType
-        number
-        wareHouse
-        contractPeriod
-        contractType
-      }
-      productInfo {
-        searchDate
-        status
-        tireType
-        wheel
-        runFlood
-        recommended
-        usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const onCreateTireProfile = /* GraphQL */ `
-  subscription OnCreateTireProfile {
-    onCreateTireProfile {
-      id
-      name
+      controlNumber
+      contractorName
+      location
+      vehicleType
       number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
         alignment
-        wheelReplace
-        checkFillAir
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
       }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
       }
       createdAt
       updatedAt
     }
   }
 `;
-export const onUpdateTireProfile = /* GraphQL */ `
-  subscription OnUpdateTireProfile {
-    onUpdateTireProfile {
+export const onUpdateTireKart = /* GraphQL */ `
+  subscription OnUpdateTireKart {
+    onUpdateTireKart {
       id
-      name
+      controlNumber
+      contractorName
+      location
+      vehicleType
       number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
         alignment
-        wheelReplace
-        checkFillAir
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
       }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
       }
       createdAt
       updatedAt
     }
   }
 `;
-export const onDeleteTireProfile = /* GraphQL */ `
-  subscription OnDeleteTireProfile {
-    onDeleteTireProfile {
+export const onDeleteTireKart = /* GraphQL */ `
+  subscription OnDeleteTireKart {
+    onDeleteTireKart {
       id
-      name
+      controlNumber
+      contractorName
+      location
+      vehicleType
       number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
         alignment
-        wheelReplace
-        checkFillAir
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
       }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
       }
       createdAt
       updatedAt

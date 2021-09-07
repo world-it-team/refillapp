@@ -235,234 +235,129 @@ export const deleteStudent = /* GraphQL */ `
     }
   }
 `;
-export const createTireCheckinfo = /* GraphQL */ `
-  mutation CreateTireCheckinfo(
-    $input: CreateTireCheckinfoInput!
-    $condition: ModelTireCheckinfoConditionInput
+export const createTireKart = /* GraphQL */ `
+  mutation CreateTireKart(
+    $input: CreateTireKartInput!
+    $condition: ModelTireKartConditionInput
   ) {
-    createTireCheckinfo(input: $input, condition: $condition) {
+    createTireKart(input: $input, condition: $condition) {
       id
-      topTable {
-        controlNumber
-        contractorName
-        location
-        vehicleType
-        number
-        wareHouse
-        contractPeriod
-        contractType
-      }
-      productInfo {
-        searchDate
-        status
-        tireType
-        wheel
-        runFlood
-        recommended
-        usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const updateTireCheckinfo = /* GraphQL */ `
-  mutation UpdateTireCheckinfo(
-    $input: UpdateTireCheckinfoInput!
-    $condition: ModelTireCheckinfoConditionInput
-  ) {
-    updateTireCheckinfo(input: $input, condition: $condition) {
-      id
-      topTable {
-        controlNumber
-        contractorName
-        location
-        vehicleType
-        number
-        wareHouse
-        contractPeriod
-        contractType
-      }
-      productInfo {
-        searchDate
-        status
-        tireType
-        wheel
-        runFlood
-        recommended
-        usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const deleteTireCheckinfo = /* GraphQL */ `
-  mutation DeleteTireCheckinfo(
-    $input: DeleteTireCheckinfoInput!
-    $condition: ModelTireCheckinfoConditionInput
-  ) {
-    deleteTireCheckinfo(input: $input, condition: $condition) {
-      id
-      topTable {
-        controlNumber
-        contractorName
-        location
-        vehicleType
-        number
-        wareHouse
-        contractPeriod
-        contractType
-      }
-      productInfo {
-        searchDate
-        status
-        tireType
-        wheel
-        runFlood
-        recommended
-        usedTime
-      }
-      tires {
-        nextToken
-      }
-      createdAt
-      updatedAt
-    }
-  }
-`;
-export const createTireProfile = /* GraphQL */ `
-  mutation CreateTireProfile(
-    $input: CreateTireProfileInput!
-    $condition: ModelTireProfileConditionInput
-  ) {
-    createTireProfile(input: $input, condition: $condition) {
-      id
-      name
+      controlNumber
+      contractorName
+      location
+      vehicleType
       number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
         alignment
-        wheelReplace
-        checkFillAir
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
       }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
       }
       createdAt
       updatedAt
     }
   }
 `;
-export const updateTireProfile = /* GraphQL */ `
-  mutation UpdateTireProfile(
-    $input: UpdateTireProfileInput!
-    $condition: ModelTireProfileConditionInput
+export const updateTireKart = /* GraphQL */ `
+  mutation UpdateTireKart(
+    $input: UpdateTireKartInput!
+    $condition: ModelTireKartConditionInput
   ) {
-    updateTireProfile(input: $input, condition: $condition) {
+    updateTireKart(input: $input, condition: $condition) {
       id
-      name
+      controlNumber
+      contractorName
+      location
+      vehicleType
       number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
         alignment
-        wheelReplace
-        checkFillAir
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
       }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
       }
       createdAt
       updatedAt
     }
   }
 `;
-export const deleteTireProfile = /* GraphQL */ `
-  mutation DeleteTireProfile(
-    $input: DeleteTireProfileInput!
-    $condition: ModelTireProfileConditionInput
+export const deleteTireKart = /* GraphQL */ `
+  mutation DeleteTireKart(
+    $input: DeleteTireKartInput!
+    $condition: ModelTireKartConditionInput
   ) {
-    deleteTireProfile(input: $input, condition: $condition) {
+    deleteTireKart(input: $input, condition: $condition) {
       id
-      name
+      controlNumber
+      contractorName
+      location
+      vehicleType
       number
-      image
-      tireInfomation
-      makerVersion
-      measurement {
-        tireReplaceJdg
-        yearManufacJdg
-        recombinIO
-        punctureInsp
+      wareHouse
+      contractPeriod
+      contractType
+      searchDate
+      status
+      tireType
+      wheel
+      runFlood
+      recommended
+      usedTime
+      checkProductResult {
+        recombinationIO
         alignment
-        wheelReplace
-        checkFillAir
+        check
+        punctureIns
+        replacementOrRepair
+        judgement
       }
-      status {
-        remainGroove
-        foreignObjectStab
-        unevenWear
-        wheelRimBend
-        crack
-        wheelCorrosion
-        separation
-        nutSearWear
-        airFlow
-      }
-      comment
-      checkInfoID
-      tireCheckinfo {
-        id
-        createdAt
-        updatedAt
+      tire {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
       }
       createdAt
       updatedAt
