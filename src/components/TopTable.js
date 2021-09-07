@@ -19,9 +19,8 @@ const useStyles = makeStyles({
   },
 });
 
-function TopTable(props) {
+function TopTable({ data }) {
   const classes = useStyles();
-  const data = props.data;
 
   return (
     <table className={classes.table}>
@@ -44,8 +43,6 @@ function TopTable(props) {
         <td>{data.wareHouse}</td>
         <td>{data.contractPeriod}</td>
         <td>{data.contractType}</td>
-
-
       </tr>
     </table>
   );

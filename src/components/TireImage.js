@@ -29,17 +29,18 @@ const useStyles = makeStyles({
   },
 });
 
-function TireImage(props) {
+function TireImage({ data }) {
   const classes = useStyles();
+  console.log(data)
   return (
     <div className={classes.root}>
       <div className={classes.nameTire}>
-        <p>{props.tireInfo.name}</p>
+        <p>{data.name}</p>
       </div>
       <div>
         <img
-          src={getImg(props.tireInfo.image)}
-          alt={props.tireInfo.image}
+          src={getImg(data.image)}
+          alt={data.image}
           className={classes.image}
         />
       </div>

@@ -61,15 +61,15 @@ const useStyles = makeStyles({
     backgroundColor: "#aba7a74d",
   },
 });
-function TireTable(props) {
-  const data = props.tireInfo;
+function TireTable({ data }) {
+
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <table className={classes.table}>
         <tr>
           <th rowSpan={2} className={classes.row1col1}>
-          {data.number}
+            {data.tireNumber}
           </th>
           <th className={classes.row1col2}>タイヤ情報</th>
           <td colSpan={3}>{data.tireInfomation}</td>

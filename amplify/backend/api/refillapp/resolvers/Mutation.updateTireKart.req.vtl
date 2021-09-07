@@ -1,4 +1,4 @@
-#set( $optionalNonNullableFields = ["controlNumber", "contractorName", "location", "vehicleType", "number", "wareHouse", "contractPeriod", "contractType", "searchDate", "status", "tireType", "wheel", "runFlood", "recommended", "usedTime", "checkProductResult", "tire"] )
+#set( $optionalNonNullableFields = ["controlNumber", "contractorName", "location", "vehicleType", "number", "wareHouse", "contractPeriod", "contractType", "searchDate", "status", "tireType", "wheel", "runFlood", "recommended", "usedTime", "checkProductResult", "tire1", "tire2", "tire3", "tire4"] )
 #foreach( $field in $optionalNonNullableFields )
   #if( $context.arguments.input.keySet().contains($field) && $util.isNull($context.args.input.get($field)) )
 $util.error("An argument you marked as Non-Null is set to Null in the query or the body of your request.")

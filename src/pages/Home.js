@@ -3,24 +3,25 @@ import TopTable from "../components/TopTable";
 import TireProfile from "../components/TireProfile";
 import MiddleTable from "../components/MiddleTable";
 import API, { graphqlOperation } from "@aws-amplify/api";
-import { getTireCheckinfo, getTireProfile, } from "../graphql/queries";
+import { getTireKart, listTireKarts } from "../graphql/customqueries";
 
 
 function Home(props) {
 
-  const [topTable, setTopTable] = useState([]);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
-    API.graphql(graphqlOperation(getTireCheckinfo, { id: '0f100bf3-a70e-4467-afff-2d24a7ebd90a' })).then((data) => {
-      setTopTable(data.data.getTireCheckinfo.topTable);
+    API.graphql(graphqlOperation(getTireKart, { id: 'c521077f-aa62-44b5-bc5b-5fce35f440cc' })).then((data) => {
+      setData(data.data.getTireKart);
     });
   }, []);
 
   return (
+    data &&
     <>
-      <TopTable data={topTable} />
-      <MiddleTable />
-      <TireProfile />
+      <TopTable data={data} />
+      <MiddleTable data={data} />
+      <TireProfile data={data} />
     </>
   );
 }

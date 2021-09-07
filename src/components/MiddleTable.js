@@ -20,16 +20,16 @@ const useStyles = makeStyles({
   },
 });
 
-function MiddleTable(props) {
+function MiddleTable({ data }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <div className={classes.left}>
-        <ProductInfo />
-        <CheckProduct />
+        <ProductInfo data={data} />
+        <CheckProduct data={data} />
       </div>
       <div className={classes.right}>
-        <Judgement />
+        <Judgement data={data} />
       </div>
     </div>
   );

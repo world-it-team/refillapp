@@ -226,7 +226,31 @@ export const onCreateTireKart = /* GraphQL */ `
         replacementOrRepair
         judgement
       }
-      tire {
+      tire1 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire2 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire3 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire4 {
         name
         tireNumber
         image
@@ -266,7 +290,31 @@ export const onUpdateTireKart = /* GraphQL */ `
         replacementOrRepair
         judgement
       }
-      tire {
+      tire1 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire2 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire3 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire4 {
         name
         tireNumber
         image
@@ -306,7 +354,31 @@ export const onDeleteTireKart = /* GraphQL */ `
         replacementOrRepair
         judgement
       }
-      tire {
+      tire1 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire2 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire3 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire4 {
         name
         tireNumber
         image

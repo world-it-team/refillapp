@@ -168,7 +168,31 @@ export const getTireKart = /* GraphQL */ `
         replacementOrRepair
         judgement
       }
-      tire {
+      tire1 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire2 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire3 {
+        name
+        tireNumber
+        image
+        tireInfomation
+        makerVersion
+        comment
+      }
+      tire4 {
         name
         tireNumber
         image

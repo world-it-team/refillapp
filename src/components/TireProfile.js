@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import data from "../data/tireInfo.json";
 import TireTable from "./TireTable";
 import TireImage from "./TireImage";
 
@@ -24,32 +23,32 @@ const useStyles = makeStyles({
     width: "18%",
   },
 });
-function TireProfile() {
+function TireProfile({ data }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <div className={classes.top}>
         <div className={classes.topR1}>
-          <TireTable tireInfo={data.tireProfile[0]} />
+          <TireTable data={data.tire1} />
         </div>
         <div className={classes.topImage}>
-          <TireImage tireInfo={data.tireProfile[0]} />
-          <TireImage tireInfo={data.tireProfile[1]} />
+          <TireImage data={data.tire1} />
+          <TireImage data={data.tire2} />
         </div>
         <div className={classes.topR2}>
-          <TireTable tireInfo={data.tireProfile[1]} />
+          <TireTable data={data.tire2} />
         </div>
       </div>
       <div className={classes.top}>
         <div className={classes.topR1}>
-          <TireTable tireInfo={data.tireProfile[2]} />
+          <TireTable data={data.tire3} />
         </div>
         <div className={classes.topImage}>
-          <TireImage tireInfo={data.tireProfile[2]} />
-          <TireImage tireInfo={data.tireProfile[3]} />
+          <TireImage data={data.tire3} />
+          <TireImage data={data.tire4} />
         </div>
         <div className={classes.topR2}>
-          <TireTable tireInfo={data.tireProfile[3]} />
+          <TireTable data={data.tire4} />
         </div>
       </div>
     </div>

@@ -65,7 +65,7 @@ type CheckProductResult {
 
 type Tire {
   name: String!
-  tireNumber: TireNumberEnum!
+  tireNumber: String!
   image: String!
   tireInfomation: String!
   makerVersion: String!
@@ -92,6 +92,8 @@ type TireKart @model {
   recommended:String!
   usedTime:String!
   checkProductResult:CheckProductResult!
-  tire:Tire!
-
+  tire1:Tire!
+  tire2:Tire!
+  tire3:Tire!
+  tire4:Tire!
 }
