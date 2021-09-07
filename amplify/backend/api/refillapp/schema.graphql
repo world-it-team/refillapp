@@ -30,8 +30,8 @@ type Student @model {
 enum TireNumberEnum {
   TOPLEFT
   TOPRIGHT
-  BOTTOMLEFT
-  BOTTOMRIGHT
+  BOTLEFT
+  BOTRIGHT
 }
 type TireMeasurement {
   tireReplaceJdg: String!
@@ -54,8 +54,28 @@ type TireStatus {
   nutSearWear: String!
   airFlow: String!
 }
+type CheckProductResult {
+        recombinationIO: String!
+        alignment: String!
+        check: String!
+        punctureIns: String!
+        replacementOrRepair: String!
+        judgement: String!
+    }
 
-type TopTable {
+type Tire {
+  name: String!
+  tireNumber: TireNumberEnum!
+  image: String!
+  tireInfomation: String!
+  makerVersion: String!
+  measurement:TireMeasurement!
+  status:TireStatus!
+  comment:String!
+}
+
+type TireKart @model {
+  id: ID!
   controlNumber: String!
   contractorName: String!
   location: String!
@@ -64,34 +84,14 @@ type TopTable {
   wareHouse: String!
   contractPeriod: String!
   contractType: String!
-}
-type ProductInfo {
   searchDate: String!
   status: String!
-  tireType: String!
-  wheel: String!
-  runFlood: String!
-  recommended: String!
-  usedTime: String!
-}
+  tireType:String!
+  wheel:String!
+  runFlood:String!
+  recommended:String!
+  usedTime:String!
+  checkProductResult:CheckProductResult!
+  tire:Tire!
 
-type TireCheckinfo @model {
-  id: ID!
-  topTable: TopTable!
-  productInfo: ProductInfo!
-  tires: [TireProfile] @connection(keyName: "byTireCheckinfo", fields: ["id"])
-}
-
-type TireProfile @model @key(name: "byTireCheckinfo", fields: ["checkInfoID"]) {
-  id: ID!
-  name: String!
-  number: TireNumberEnum!
-  image: String!
-  tireInfomation: String!
-  makerVersion: String!
-  measurement: TireMeasurement!
-  status: TireStatus!
-  comment: String!
-  checkInfoID: ID!
-  tireCheckinfo: TireCheckinfo @connection(fields: ["checkInfoID"])
 }

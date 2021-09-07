@@ -1,0 +1,141 @@
+{
+    "tirekart": {
+        "controlNumber": "5560583221",
+        "contractorName": "佐藤一郎",
+        "location": "F1A00",
+        "vehicleType": "サン",
+        "number": "富士山500お1122",
+        "wareHouse": "デモ倉庫山梨◯x自動車販売甲府店",
+        "contractPeriod": "2017/08/09~2018/08/08: 12ヶ月間",
+        "contractType": "年間契約新規",
+        "searchDate": "2021/08/27",
+        "status": "点検済み",
+        "tireType": "スタッドレス",
+        "wheel": "ホイール",
+        "runFlood": "NORMAL",
+        "recommended": "交換推奨",
+        "usedTime": "10年８カ月",
+        "checkProductResult": {
+            "recombinationIO": "不要",
+            "alignment": "不要",
+            "check": "不要",
+            "punctureIns": "不要",
+            "replacementOrRepair": "不要",
+            "judgement": "即交換"
+        },
+        "tire": [
+            {
+                "name": "1 前左",
+                "number": "01",
+                "image": "tire1.png",
+                "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+                "makerVersion": "[BS製][[2507][2007年06月]]",
+                "measurement": {
+                    "tireReplaceJdg": "即交換",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
+                "status": {
+                    "remainGroove": "0.2mm",
+                    "foreignObjectStab": "良好",
+                    "unevenWear": "良好",
+                    "wheelRimBend": "良好",
+                    "crack": "良好",
+                    "wheelCorrosion": "良好",
+                    "separation": "良好",
+                    "nutSearWear": "良好",
+                    "airFlow": "なし"
+                },
+                "comment": ""
+            },
+            {
+                "name": "2 前右",
+                "number": "02",
+                "image": "tire1.png",
+                "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+                "makerVersion": "[BS製][[2507][2007年06月]]",
+                "measurement": {
+                    "tireReplaceJdg": "不要",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
+                "status": {
+                    "remainGroove": "0.2mm",
+                    "foreignObjectStab": "良好",
+                    "unevenWear": "良好",
+                    "wheelRimBend": "良好",
+                    "crack": "良好",
+                    "wheelCorrosion": "良好",
+                    "separation": "良好",
+                    "nutSearWear": "良好",
+                    "airFlow": "なし"
+                },
+                "comment": ""
+            },
+            {
+                "name": "3 後左",
+                "number": "03",
+                "image": "tire1.png",
+                "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+                "makerVersion": "[BS製][[2507][2007年06月]]",
+                "measurement": {
+                    "tireReplaceJdg": "不要",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
+                "status": {
+                    "remainGroove": "0.2mm",
+                    "foreignObjectStab": "良好",
+                    "unevenWear": "良好",
+                    "wheelRimBend": "良好",
+                    "crack": "良好",
+                    "wheelCorrosion": "良好",
+                    "separation": "良好",
+                    "nutSearWear": "良好",
+                    "airFlow": "なし"
+                },
+                "comment": ""
+            },
+            {
+                "name": "4 後右",
+                "number": "04",
+                "image": "tire1.png",
+                "tireInfomation": "[スタッドレス][アルミニウム][145/65R15]",
+                "makerVersion": "[BS製][[2507][2007年06月]]",
+                "measurement": {
+                    "tireReplaceJdg": "不要",
+                    "yearManufacJdg": "不要",
+                    "recombinIO": "不要",
+                    "punctureInsp": "不要",
+                    "alignment": "不要",
+                    "wheelReplace": "不要",
+                    "checkFillAir": "不要"
+                },
+                "status": {
+                    "remainGroove": "0.2mm",
+                    "foreignObjectStab": "良好",
+                    "unevenWear": "良好",
+                    "wheelRimBend": "良好",
+                    "crack": "良好",
+                    "wheelCorrosion": "良好",
+                    "separation": "良好",
+                    "nutSearWear": "良好",
+                    "airFlow": "なし"
+                },
+                "comment": ""
+            }
+        ]
+    }
+}

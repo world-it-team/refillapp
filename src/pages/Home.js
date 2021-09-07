@@ -5,10 +5,6 @@ import MiddleTable from "../components/MiddleTable";
 import API, { graphqlOperation } from "@aws-amplify/api";
 import { getTireCheckinfo, getTireProfile, } from "../graphql/queries";
 
-// async function test() {
-//   let data = await API.graphql(graphqlOperation(getTireCheckinfo, { id: '0f100bf3-a70e-4467-afff-2d24a7ebd90a' }))
-//   console.log(data.data.getTireCheckinfo.topTable)
-// }
 
 function Home(props) {
 
